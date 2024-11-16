@@ -11,6 +11,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        nero30: "rgba(0, 2, 0, 0.3)",
+        verde: "#334B35",
+        giallo: "#FDAE16",
       },
     },
   },

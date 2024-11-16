@@ -12,6 +12,17 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const brightMelody = localFont({
+  src: "./fonts/BrightMelody.woff2",
+  variable: "--font-bright-melody",
+  weight: "100 900",
+});
+
+const montserrat = localFont({
+  src: "./fonts/Montserrat.ttf",
+  variable: "--font-montserrat",
+  weight: "100 900",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${brightMelody.variable} ${montserrat.variable} antialiased`}
       >
         {children}
       </body>
